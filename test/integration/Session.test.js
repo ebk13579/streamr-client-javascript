@@ -114,7 +114,7 @@ describe('Session', () => {
             const sub = await client.resend({
                 stream: stream.id,
                 resend: {
-                    last: 1,
+                    last: 3,
                 },
             }, (msg) => {
                 messages.push(msg)
